@@ -25,6 +25,19 @@
 		D00A0C4D1BB6170F00E00126 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A0C4C1BB6170F00E00126 /* GlanceController.m */; };
 		D00A0C501BB6170F00E00126 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A0C4F1BB6170F00E00126 /* ComplicationController.m */; };
 		D00A0C521BB6170F00E00126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00A0C511BB6170F00E00126 /* Assets.xcassets */; };
+		D00A0C691BB6196800E00126 /* MessageInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A0C681BB6196800E00126 /* MessageInterfaceController.m */; };
+		D00A0C6A1BB6196800E00126 /* MessageInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A0C681BB6196800E00126 /* MessageInterfaceController.m */; };
+		D00A0C6B1BB6196800E00126 /* MessageInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A0C681BB6196800E00126 /* MessageInterfaceController.m */; };
+		D00A0C6E1BB619A200E00126 /* MessagesRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A0C6D1BB619A200E00126 /* MessagesRowController.m */; };
+		D00A0C6F1BB619A200E00126 /* MessagesRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A0C6D1BB619A200E00126 /* MessagesRowController.m */; };
+		D00A0C701BB619A200E00126 /* MessagesRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A0C6D1BB619A200E00126 /* MessagesRowController.m */; };
+		D00A0C731BB619C200E00126 /* MyRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A0C721BB619C200E00126 /* MyRowController.m */; };
+		D00A0C741BB619C200E00126 /* MyRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A0C721BB619C200E00126 /* MyRowController.m */; };
+		D00A0C751BB619C200E00126 /* MyRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A0C721BB619C200E00126 /* MyRowController.m */; };
+		D00A0C841BB628C500E00126 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A0C831BB628C500E00126 /* Message.m */; };
+		D00A0C851BB628C500E00126 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A0C831BB628C500E00126 /* Message.m */; };
+		D00A0C861BB628C500E00126 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = D00A0C831BB628C500E00126 /* Message.m */; };
+		D01EA8321BB6598C0060867C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00A0C341BB6170F00E00126 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +131,15 @@
 		D00A0C4F1BB6170F00E00126 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
 		D00A0C511BB6170F00E00126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D00A0C531BB6170F00E00126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D00A0C671BB6196800E00126 /* MessageInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageInterfaceController.h; sourceTree = "<group>"; };
+		D00A0C681BB6196800E00126 /* MessageInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageInterfaceController.m; sourceTree = "<group>"; };
+		D00A0C6C1BB619A200E00126 /* MessagesRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesRowController.h; sourceTree = "<group>"; };
+		D00A0C6D1BB619A200E00126 /* MessagesRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesRowController.m; sourceTree = "<group>"; };
+		D00A0C711BB619C200E00126 /* MyRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRowController.h; sourceTree = "<group>"; };
+		D00A0C721BB619C200E00126 /* MyRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRowController.m; sourceTree = "<group>"; };
+		D00A0C821BB628C500E00126 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		D00A0C831BB628C500E00126 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		D3655A4E48BE63D7C5445314 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +174,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E2FCDEC5F43E498BA750DC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3655A4E48BE63D7C5445314 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D00A0BF61BB6170F00E00126 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +191,7 @@
 				D00A0C301BB6170F00E00126 /* WatchMessenger WatchKit App */,
 				D00A0C3F1BB6170F00E00126 /* WatchMessenger WatchKit Extension */,
 				D00A0C001BB6170F00E00126 /* Products */,
+				4E2FCDEC5F43E498BA750DC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,6 +264,14 @@
 			children = (
 				D00A0C421BB6170F00E00126 /* InterfaceController.h */,
 				D00A0C431BB6170F00E00126 /* InterfaceController.m */,
+				D00A0C671BB6196800E00126 /* MessageInterfaceController.h */,
+				D00A0C681BB6196800E00126 /* MessageInterfaceController.m */,
+				D00A0C6C1BB619A200E00126 /* MessagesRowController.h */,
+				D00A0C6D1BB619A200E00126 /* MessagesRowController.m */,
+				D00A0C711BB619C200E00126 /* MyRowController.h */,
+				D00A0C721BB619C200E00126 /* MyRowController.m */,
+				D00A0C821BB628C500E00126 /* Message.h */,
+				D00A0C831BB628C500E00126 /* Message.m */,
 				D00A0C451BB6170F00E00126 /* ExtensionDelegate.h */,
 				D00A0C461BB6170F00E00126 /* ExtensionDelegate.m */,
 				D00A0C481BB6170F00E00126 /* NotificationController.h */,
@@ -373,6 +412,7 @@
 					};
 					D00A0C3A1BB6170F00E00126 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 9J68NTR2N3;
 					};
 				};
 			};
@@ -436,6 +476,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01EA8321BB6598C0060867C /* Assets.xcassets in Resources */,
 				D00A0C521BB6170F00E00126 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +499,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00A0C1D1BB6170F00E00126 /* WatchMessengerTests.m in Sources */,
+				D00A0C6E1BB619A200E00126 /* MessagesRowController.m in Sources */,
+				D00A0C841BB628C500E00126 /* Message.m in Sources */,
+				D00A0C731BB619C200E00126 /* MyRowController.m in Sources */,
+				D00A0C691BB6196800E00126 /* MessageInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +511,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00A0C281BB6170F00E00126 /* WatchMessengerUITests.m in Sources */,
+				D00A0C6F1BB619A200E00126 /* MessagesRowController.m in Sources */,
+				D00A0C851BB628C500E00126 /* Message.m in Sources */,
+				D00A0C741BB619C200E00126 /* MyRowController.m in Sources */,
+				D00A0C6A1BB6196800E00126 /* MessageInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,11 +522,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00A0C701BB619A200E00126 /* MessagesRowController.m in Sources */,
 				D00A0C471BB6170F00E00126 /* ExtensionDelegate.m in Sources */,
 				D00A0C441BB6170F00E00126 /* InterfaceController.m in Sources */,
 				D00A0C4A1BB6170F00E00126 /* NotificationController.m in Sources */,
 				D00A0C4D1BB6170F00E00126 /* GlanceController.m in Sources */,
 				D00A0C501BB6170F00E00126 /* ComplicationController.m in Sources */,
+				D00A0C751BB619C200E00126 /* MyRowController.m in Sources */,
+				D00A0C861BB628C500E00126 /* Message.m in Sources */,
+				D00A0C6B1BB6196800E00126 /* MessageInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,10 +673,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"AF_APP_EXTENSIONS=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "WatchMessenger WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustinLennox.WatchMessenger.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -635,10 +696,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "WatchMessenger WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustinLennox.WatchMessenger.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -654,7 +718,7 @@
 				INFOPLIST_FILE = "WatchMessenger WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustinLennox.WatchMessenger.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
+				SDKROOT = watchos2.0;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -669,7 +733,7 @@
 				INFOPLIST_FILE = "WatchMessenger WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustinLennox.WatchMessenger.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
+				SDKROOT = watchos2.0;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -681,6 +745,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WatchMessenger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustinLennox.WatchMessenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -692,6 +757,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WatchMessenger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustinLennox.WatchMessenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -729,6 +795,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustinLennox.WatchMessengerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos2.0;
 				TEST_TARGET_NAME = WatchMessenger;
 				USES_XCTRUNNER = YES;
 			};
@@ -741,6 +808,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustinLennox.WatchMessengerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos2.0;
 				TEST_TARGET_NAME = WatchMessenger;
 				USES_XCTRUNNER = YES;
 			};
@@ -765,6 +833,7 @@
 				D00A0C581BB6170F00E00126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D00A0C5A1BB6170F00E00126 /* Build configuration list for PBXNativeTarget "WatchMessenger WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -773,6 +842,7 @@
 				D00A0C5C1BB6170F00E00126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D00A0C5E1BB6170F00E00126 /* Build configuration list for PBXNativeTarget "WatchMessenger" */ = {
 			isa = XCConfigurationList;
@@ -781,6 +851,7 @@
 				D00A0C601BB6170F00E00126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D00A0C611BB6170F00E00126 /* Build configuration list for PBXNativeTarget "WatchMessengerTests" */ = {
 			isa = XCConfigurationList;
@@ -789,6 +860,7 @@
 				D00A0C631BB6170F00E00126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D00A0C641BB6170F00E00126 /* Build configuration list for PBXNativeTarget "WatchMessengerUITests" */ = {
 			isa = XCConfigurationList;
@@ -797,6 +869,7 @@
 				D00A0C661BB6170F00E00126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

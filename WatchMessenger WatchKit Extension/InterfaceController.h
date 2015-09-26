@@ -8,7 +8,12 @@
 
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
+#import "MyRowController.h"
 
 @interface InterfaceController : WKInterfaceController
+
+@property (strong, nonatomic) IBOutlet WKInterfaceTable *messageTable;
+@property (strong, nonatomic) NSMutableDictionary *messagesDictionary;
+- (IBAction)coolioPressed;
 
 @end

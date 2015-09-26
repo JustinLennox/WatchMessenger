@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8187.4" systemVersion="15A263e" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IZ2-fr-HI5">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
-            <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
-            </objects>
-            <point key="canvasLocation" x="235" y="347"/>
-        </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModuleProvider="">
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
                     <items>
                         <group alignment="left" id="t8f-Gd-c4y"/>
                         <group alignment="left" id="uCw-4Q-Ouw"/>
@@ -44,9 +37,106 @@
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModuleProvider=""/>
+                <controller id="gdX-wl-uQE" customClass="NotificationController"/>
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="mLq-Gn-k96">
+            <objects>
+                <controller id="IZ2-fr-HI5" customClass="InterfaceController">
+                    <items>
+                        <table alignment="center" id="6Ly-o9-eyn">
+                            <items>
+                                <tableRow identifier="defaultRow" id="Hca-Q1-qgH" customClass="MyRowController">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="VwC-Ym-kdW">
+                                        <items>
+                                            <label alignment="left" text="SenderName" id="63V-t3-bLE">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <label alignment="left" text="MessageText" numberOfLines="0" id="0eh-sM-Fft"/>
+                                            <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="hF8-Fh-nSE">
+                                                <connections>
+                                                    <action selector="contactUrgencySliderPressed:" destination="Hca-Q1-qgH" id="QP4-jc-6Y6"/>
+                                                </connections>
+                                            </slider>
+                                        </items>
+                                        <connections>
+                                            <segue destination="QtA-dd-REd" kind="push" id="sB0-Sv-3j6"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="contactUrgencySlider" destination="hF8-Fh-nSE" id="8Xq-wz-K5O"/>
+                                        <outlet property="messageTextLabel" destination="0eh-sM-Fft" id="diU-zW-TMN"/>
+                                        <outlet property="senderNameLabel" destination="63V-t3-bLE" id="NBC-Hd-b7N"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="messageTable" destination="6Ly-o9-eyn" id="JtD-KU-dTO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Message Interface Controller-->
+        <scene sceneID="UVg-a6-n8f">
+            <objects>
+                <controller id="QtA-dd-REd" customClass="MessageInterfaceController">
+                    <items>
+                        <table alignment="center" id="7dz-oP-Sjl">
+                            <items>
+                                <tableRow identifier="messageRow" id="79N-nT-cOI" customClass="MessagesRowController">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="cPo-Ph-qMI">
+                                        <items>
+                                            <label alignment="center" text="Label" textAlignment="center" numberOfLines="0" id="883-BE-MWN"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="messageGroup" destination="cPo-Ph-qMI" id="xgO-cX-OVZ"/>
+                                        <outlet property="messageLabel" destination="883-BE-MWN" id="U7g-S3-rMV"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label alignment="center" text="MessagePreview" textAlignment="center" numberOfLines="0" id="Ieg-1p-zes"/>
+                        <slider width="1" alignment="left" value="1" maximum="4" steps="4" id="Dp9-JL-SKu">
+                            <connections>
+                                <action selector="urgencySliderPressed:" destination="QtA-dd-REd" id="pG3-nf-TI8"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="left" title="Reply" id="4y3-vq-Bzi">
+                            <connections>
+                                <action selector="replyButtonPressed" destination="QtA-dd-REd" id="zDY-cx-ceE"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Send" id="EsH-S4-Pwt">
+                            <connections>
+                                <action selector="sendButtonPressed" destination="QtA-dd-REd" id="RqO-3R-G79"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="hbI-bY-eWa">
+                        <items>
+                            <menuItem title="Nice!" icon="accept" id="zm1-sn-yAf">
+                                <connections>
+                                    <action selector="niceMenuPressed:" destination="QtA-dd-REd" id="ITS-tw-1M2"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="messagePreviewLabel" destination="Ieg-1p-zes" id="JvR-Jj-bAO"/>
+                        <outlet property="replyButton" destination="4y3-vq-Bzi" id="M9q-AX-WSa"/>
+                        <outlet property="sendButton" destination="EsH-S4-Pwt" id="TgR-p1-0EH"/>
+                        <outlet property="table" destination="7dz-oP-Sjl" id="Nth-9k-8GP"/>
+                        <outlet property="urgencySlider" destination="Dp9-JL-SKu" id="rNW-n2-QoQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="413" y="347"/>
         </scene>
     </scenes>
 </document>
