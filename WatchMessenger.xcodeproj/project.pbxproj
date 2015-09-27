@@ -139,6 +139,9 @@
 		D00A0C721BB619C200E00126 /* MyRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRowController.m; sourceTree = "<group>"; };
 		D00A0C821BB628C500E00126 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		D00A0C831BB628C500E00126 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		D03DDE011BB672E300CC876E /* WatchMessenger WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "WatchMessenger WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		D03DDE021BB6731D00CC876E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		D03DDE041BB6742F00CC876E /* libsystem_configuration.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsystem_configuration.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/usr/lib/system/libsystem_configuration.tbd; sourceTree = DEVELOPER_DIR; };
 		D3655A4E48BE63D7C5445314 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -177,6 +180,8 @@
 		4E2FCDEC5F43E498BA750DC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D03DDE041BB6742F00CC876E /* libsystem_configuration.tbd */,
+				D03DDE021BB6731D00CC876E /* Security.framework */,
 				D3655A4E48BE63D7C5445314 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -262,6 +267,7 @@
 		D00A0C3F1BB6170F00E00126 /* WatchMessenger WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D03DDE011BB672E300CC876E /* WatchMessenger WatchKit Extension.entitlements */,
 				D00A0C421BB6170F00E00126 /* InterfaceController.h */,
 				D00A0C431BB6170F00E00126 /* InterfaceController.m */,
 				D00A0C671BB6196800E00126 /* MessageInterfaceController.h */,
@@ -413,6 +419,11 @@
 					D00A0C3A1BB6170F00E00126 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 9J68NTR2N3;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -682,6 +693,10 @@
 				);
 				INFOPLIST_FILE = "WatchMessenger WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustinLennox.WatchMessenger.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
@@ -700,6 +715,10 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "WatchMessenger WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JustinLennox.WatchMessenger.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";

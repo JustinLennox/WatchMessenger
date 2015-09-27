@@ -11,12 +11,13 @@
 #import "MessagesRowController.h"
 #import "Message.h"
 
-@interface MessageInterfaceController : WKInterfaceController
+@interface MessageInterfaceController : WKInterfaceController <NSURLSessionDelegate>
 
 @property (strong, nonatomic) IBOutlet WKInterfaceTable *table;
 @property (strong, nonatomic) IBOutlet WKInterfaceButton *replyButton;
 - (IBAction)replyButtonPressed;
 @property (strong, nonatomic) NSMutableDictionary *messagesDictionary;
+@property (nonatomic) BOOL sending;
 
 @property (strong, nonatomic) NSMutableArray *conversationArray;
 @property (strong, nonatomic) Message *currentMessage;
@@ -34,6 +35,7 @@
 - (IBAction)sendButtonPressed;
 
 @property (strong, nonatomic) Message *mostRecentMessage;
+@property (strong, nonatomic) NSString *lastBuzzedMessage;
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 

@@ -10,4 +10,8 @@
 
 @implementation Message
 
+- (NSString *)description {
+    return [NSString stringWithFormat: @"Message: Sender:%@, Receiver=%@, Text:%@, Urgency:%@", self.senderID, self.receiverID, self.messageText, self.urgency];
+}
+
 @end
